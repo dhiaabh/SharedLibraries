@@ -1,6 +1,6 @@
 // File: vars/GitSCM-Checkout.groovy
 def call() {
-        sh " echo retrieved! "
+        echo "retrieved!"
 }
 // def call(url, depth, branch, gitCredentials) {
 // def call(url, depth, branch) {
