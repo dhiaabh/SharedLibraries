@@ -3,7 +3,7 @@
 //         echo "retrieved!"
 // }
 // def call(url, depth, branch, gitCredentials) {
-def call(url, depth, branch) {
+def call(String url, String depth, String branch) {
 //         // def credentials = gitCredentials("$gitCredentials")
 //         // def username = credentials.username
 //         // def password = credentials.password
