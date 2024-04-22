@@ -9,5 +9,5 @@ def call(url, depth, branch, gitCredentials) {
         def protocol = parts[0] + "://"
         def gitRepository = parts[1]
         
-        sh "git clone --depth ${depth} --branch ${branch} ${protocol}${username}:${password}@${gitRepository} ."
+        sh "git clone --depth 1 --branch ${branch} ${protocol}${username}:${password}@${gitRepository} ."
 }
