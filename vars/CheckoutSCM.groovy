@@ -18,7 +18,7 @@ def call(String url, String depth, String branch, String username, String passwo
         sh "echo ${depth}"
         sh "echo ${branch}"
 
-        sh "git clone --depth 1 --branch ${branch} ${protocol}${username}:${password}@${gitRepository} ."
+        sh "git clone --depth 1 --branch ${branch} ${protocol}${username}:${password}@${gitRepository}"
 
         echo " ####################################################"
 
