@@ -3,10 +3,10 @@
 //         echo "retrieved!"
 // }
 // def call(url, depth, branch, gitCredentials) {
-def call(String url, String depth, String branch, String gitCredentials) {
-        def credentials = gitCredentials("$gitCredentials")
-        def username = credentials.username
-        def password = credentials.password
+def call(String url, String depth, String branch, String username, String password) {
+        // def credentials = gitCredentials("$gitCredentials")
+        // def username = credentials.username
+        // def password = credentials.password
         
         def parts = url.split("://", 2)
         def protocol = parts[0] + "://"
